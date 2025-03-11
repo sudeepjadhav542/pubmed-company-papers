@@ -26,3 +26,32 @@ poetry install
 - [pytest](https://docs.pytest.org/): For testing
 - [black](https://github.com/psf/black) and [isort](https://pycqa.github.io/isort/): For code formatting
 - [mypy](https://mypy.readthedocs.io/): For static type checking
+
+##Running the Project
+git clone https://github.com/yourusername/pubmed-company-papers.git
+cd pubmed-company-papers
+
+# Install dependencies
+poetry install
+
+# Run the program
+poetry run get-papers-list "cancer therapy"
+
+# Run with options
+poetry run get-papers-list "cancer therapy" -f results.csv -d -e sudeepjadhav542@gmail.com
+
+
+## Running Test
+# Using pip
+pytest
+
+# Using Poetry
+poetry run pytest
+
+# Run tests with coverage
+poetry run pytest --cov=pubmed_company_papers
+
+# Run specific test file
+poetry run pytest tests/test_affiliations.py
+
+
