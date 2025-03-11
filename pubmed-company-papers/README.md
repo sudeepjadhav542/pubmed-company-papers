@@ -10,7 +10,7 @@ Installation
 This project uses Poetry for dependency management. To install:
 
 # Clone the repository
-git clone https://github.com/yourusername/pubmed-company-papers.git
+git clone https://github.com/sudeepjadhav542/pubmed-company-papers.git
 cd pubmed-company-papers
 
 # Install dependencies
